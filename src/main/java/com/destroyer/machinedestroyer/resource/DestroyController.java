@@ -21,7 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.destroyer.machinedestroyer.service.MonteCarloPI;
 
-@RestController("/destroy")
+@RestController
+@RequestMapping("/destroy")
 public class DestroyController {
 
   private static Map<Long, String> map = new HashMap<Long, String>();
